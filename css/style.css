@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cards-container {
+    display: flex;
+    width: 55%;
+    height: 62%;
+    border-radius: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    padding: 40px;
+    box-sizing: border-box;
+    flex: 0 0 33.3333333%;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-sedans {
+    background-color:  rgb(227, 136, 38);
+    border-radius: 10px 0 0 10px;
+}
+
+.icon-sedans {
+    background-image: url("../images/icon-sedans.svg");
+}
+
+.card-suvs {
+    background-color: rgb(0, 105, 112);
+}
+
+.icon-suvs {
+    background-image: url("../images/icon-suvs.svg");
+}
+
+.card-luxury {
+    background-color: rgb(0, 66, 65);
+    border-radius: 0 10px 10px 0;
+}
+
+.icon-luxury {
+    background-image: url("../images/icon-luxury.svg");
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 28px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.card-text {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    width: 95%;
+}
+
+.btn {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 35px;
+    font-size: 14px;
+    width: 60%;
+    padding: 12px 0;
+    cursor: pointer;
+    transition: color 300ms linear, background-color 300ms linear;
+}
+
+.btn:hover {
+    border: 2px solid rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.btn-card-sedans {
+    color:rgb(227, 136, 38);
+}
+
+.btn-card-suvs {
+    color: rgb(0, 105, 112);
+}
+
+.btn-card-luxury {
+    color: rgb(0, 66, 65);
+}
+
+@media screen and (min-width: 375px) and (max-width: 960px) {
+    .cards-container {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
